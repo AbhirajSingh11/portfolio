@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1c0f6a2c03.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Computers And New Media</p>
+                <h1>Hi, I am <span>Abhiraj</span>!</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --about-- --->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/mypicture.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="color">I'm a tech enthusiast pursuing Master's in Computer Science at Texas A&M University.</p>
+                <p class="color">I will be taking CSCE 656 Computers And New Media because I am really interested in knowing how stories and narratives
+                    are affected by the interactive media. Further, I want to design an entire system to create a profound impact
+                    storytelling and communication. 
+                </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Interests')">Media</p>
+                        <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Interests">
+                        <div class="row">
+                            <div class="media-col-1">
+                                <h2>Phone:</h2>
+                            <ul>
+                                <li>Text Message</li>
+                                <li>Whatsapp</li>
+                                <li>Email (Gmail) <br><br></li>
+                            </ul>
+                            <h2>Videos</h2>
+                            <ul>
+                                <li style="margin-left:2px">Netflix:</li>
+                                <li style="margin-left:55px">Breaking Bad, Money Heist, kaleidoscope.</li>
+                                <li style="margin-left:2px">Zoro:</li>
+                                <li style="margin-left:55px">Attack on Titans, Naruto,<br> Haikyuu.</li>
+                            </ul>
+                            </div>
+                            <div class="media-col-2">
+                            <h2>Social Media:</h2>
+                            <ul>
+                                <li style="margin-left:2px">LinkedIn</li>
+                                <li style="margin-left:2px">Instagram</li>
+                                <li style="margin-left:2px">Snapchat<br><br></li>
+                            </ul>
+                            <h2>Audio</h2>
+                            <ul>
+                                <li style="margin-left:2px">Spotify:</li>
+                                <li style="margin-left:55px">1975, <br> The Chainsmokers, <br> Lany.</li>
+                                <li style="margin-left:2px">Soundcloud</li>
+                                <li style="margin-left:2px">Podcasts</li>
+                                
+                            </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="tab-contents" id="Skills">
+                        <ul>
+                            <li><span>Programming Languages: Java, C++, MySQL, Python</span></li>
+                            <li><span class="alternative">Data Structures</span></li>
+                            <li><span >Algorithm Design and Analysis</span></li>
+                            <li><span class="alternative">Database Management Systems</span></li>
+                            <li><span >Object Oriented Programming</span></li>
+                            <li><span class="alternative">Machine Learning</span></li>
+                            <li><span >Deep Learning</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span >Software Deveoper intern at Embitel Technologies, Banglore, India<br>Jun 2021 - Aug 2021<br></span><br> Developed an autonomous car project applying deep learning, adapted 350+ images and videos generated from
+                                CARLA simulator and utilising OpenCV libraries for perspective transformation and edge detection<br><br>
+                                Executed usage of 6 polynomial coefficients of both lanes as labels to train model and later incorporated an instance
+                                segmentation approach to detect lanes</li>
+                            <li><span >Machine Learning intern at Verzeo, Banglore, India <br>May 2021 - Jul 2021<br></span><br> Applied various machine learning concepts and created a minor project for predicting diabetes in a person
+                                with K-Nearest Neighbour, SVM and Logistic Regression classification techniques<br><br>
+                                mplemented a major project from MNIST dataset to perform digit classification using SVM algorithm and achieved an accuracy of 94%</li>
+                            <li><span >Application Development intern at Trexspace PTE Ltd, Singapore <br>May 2019 - Jun 2019<br></span><br> Created a React Native application for an NGO- Help Victim Foundation aimed at women safety</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>May 2024</span><br>Master of Science in Computer Science from Texas A&M University<br>CGPA : 4.0/4.0</li>
+                            <li><span>Jun 2022</span><br>Bachelor of Technology in Computer Science from Delhi Technological University<br>CGPA : 8.92/10.00</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents"id="Projects">
+                        <ul>
+                            <li><span>Incremental Learning in Convolution Neural Networks<br>Oct 2021 - Feb 2022<br></span><br> Designed and implemented an incremental learning-based algorithm, that would give good performance on both new and old datasets,
+                                when model trained on the old dataset is further trained on the new dataset<br></li>
+                            <li><span>Game Automated Play Testing<br>Nov 2020 - Dec 2020<br></span><br> Designed, built and tested a 3-D attack game in Unity with Breadth First Search algorithm for automated navigation, testing of game
+                                was automated to reduce run time<br></li>
+                            <li><span>Low Light Image Enhancement<br>Sept 2020 - Nov 2020<br></span><br> Developed a CNN based Deep Learning Architecture for low light image enhancement to make buried details visible and improve
+                                overall quality of image<br></li>
+                            <li><span>Hospital Management System<br>Apr 2020 - May 2020<br></span><br> Created an Hospital Management System using Microsoft Visual Studio as a Database Management project to monitor all major
+                                operations of a hospital<br></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- --contact-- --->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                </div>
+                <div class="contact-right">
+                    <h1 class="sub-title">My Contact</h1>
+                    <p><i class="fa-solid fa-envelope"></i> abhirajsrathore11@tamu.edu</p>
+                    <p><i style="margin-left:75px;" class="fa-solid fa-phone"></i> +1 979-422-1251</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/abhiraj-singh-rathore/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/rathore_abhiraj/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
